@@ -20,7 +20,7 @@ hbs.registerPartials(partialDirectory)          // to tell hbs the location of t
 // to tell Express the location of our static directory to serve
 app.use(express.static(publicDirectoryPath));
 
-
+const port = process.env.PORT || 3000
 // here we define the routes
 // making a route. which in this case the / the root
 // Note: the index.html in the public directory overrides this route
@@ -82,6 +82,6 @@ app.get("*", (req, res) => {
 })
 
 // to start the server
-app.listen(3000, () => {
-    console.log("server is now running");
+app.listen(port, () => {
+    console.log("server is now running on port " + port);
 });
