@@ -65,13 +65,13 @@ app.get("/weather", (req, res) => {
     })
 })
 
-app.get("/help/*", (req, res) => {
-    res.render("404", {
-        title: "404",
-        name: "Mohamed Saeed",
-        message: "help article not found"
-    })
-})
+// app.get("/help/*", (req, res) => {
+//     res.render("404", {
+//         title: "404",
+//         name: "Mohamed Saeed",
+//         message: "help article not found"
+//     })
+// })
 
 app.get("*", (req, res) => {
     res.render("404", {
