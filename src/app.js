@@ -26,15 +26,15 @@ const port = process.env.PORT || 3000
 // Note: the index.html in the public directory overrides this route
 app.get("", (req, res) => {
     res.render("index", {
-        title: "weather",
-        name: "Mohamed Saeed"
+        title: "weather forecast",
+        name: "https://www.mohamedsaied.com"
     });
 });
 
 app.get("/about", (req, res) => {
     res.render("about", {
-        title: "about",
-        name: "Mohamed Saeed"
+        title: "About the app",
+        name: "https://www.mohamedsaied.com"
     })
 })
 
@@ -77,7 +77,7 @@ app.get("/weather", (req, res) => {
 app.get("*", (req, res) => {
     res.render("404", {
         title: "404",
-        name: "Mohamed Saeed",
+        name: "https://www.mohamedsaied.com",
         message: "page not found"
     })
 })
