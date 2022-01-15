@@ -10,7 +10,7 @@ function forecast(latitude, longitude, callback){
         } else if(response.body.error){
             callback("** API ERROR ** Incorrect location. Try another search", undefined)
         } else{
-            callback(undefined, "It is currently " + response.body.current.temperature + " outside. and it feels like " + response.body.current.feelslike + " degrees out")
+            callback(undefined, { message: "It is currently " + response.body.current.temperature + " outside. and it feels like " + response.body.current.feelslike + " degrees out", imageurl: response.body.current.weather_icons[0]});
         }
     }) 
 }

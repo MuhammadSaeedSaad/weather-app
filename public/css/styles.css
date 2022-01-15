@@ -1,77 +1,81 @@
 body {
-    background: white;
-    color: #311e21;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.main-dev {
-    width: 60%;
-    margin: 0 auto;
+div.main-dev {
+    flex-grow: 1;
+    color:blueviolet;
     text-align: center;
-}
-
-.nav-bar {
-    width: 30%;
     margin: 0 auto;
+}
+
+h1.main-dev {
+    padding-bottom: 3.5vh;
+    padding-top: 30vh;
+    font-size: 6vw;
+}
+
+footer {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: flex-start;
+    width: 70%;
+    border-top: 1px gray solid;
 }
 
-.search-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 50%;
-    margin: 0 auto;
-    border: 1px solid #1E202B;
-    border-radius: 30px;
-    background: #1E202B;
+input[type=text] {
+    width: 25vw;
+    border-radius: 0.5vw;
+    padding: 0.5vh;
+    border-color: rgb(206, 206, 206);
+    border-style: groove;
 }
 
-.search-input {
-    width: 300px;
-    height: 30px;
-    color: white;
-    background: transparent;
-    border: none;
-    outline: none;
+button {
+    border-radius: 0.5vw;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border-color: rgb(206, 206, 206);
+    border-style: groove;
 }
 
-.search-btn {
-    width: 80px;
-    height: 30px;
-    margin-left: 175px;
-    border: 1px solid #009AD8;
-    border-radius: 30px;
-    background: #009AD8;
+::placeholder {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+div.links {
+    padding: 0.5vh 0;
+    flex-grow: 1;
 }
 
 a {
-    color: #009AD8;
-    width: 50%;
     text-decoration: none;
-    font-size: 25px;
-    display: inline-block;
-    border: 1px solid #1E202B;
-    border-radius: 30px;
-    margin: 0 5px;
+    padding: 0.5vw;
+    color: black;
 }
 
-a:link {
-    color: #009AD8;
-    background-color: #1E202B;
-    text-decoration: none;
-  }
-  
 a:hover {
-color: #009AD8;
-background-color: #1E202B;
-text-decoration: underline;
-border: 1px solid #009AD8;
+    background-color: rgb(224, 224, 224);
 }
 
-a:active {
-color: yellow;
-background-color: transparent;
-text-decoration: underline;
+div.createdby{
+    align-self: stretch;
+    padding: 0.5vh;
+}
+
+form {
+    margin-bottom: 5vh;
+}
+
+p {
+    font-size: 2vw;
+}
+
+img {
+    padding-bottom: 2vh;
 }
