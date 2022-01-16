@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 99vh;
 }
 
 div.main-dev {
@@ -16,7 +16,7 @@ div.main-dev {
 
 h1.main-dev {
     padding-bottom: 3.5vh;
-    padding-top: 30vh;
+    padding-top: 27vh;
     font-size: 6vw;
 }
 
@@ -25,6 +25,7 @@ footer {
     justify-content: flex-start;
     width: 70%;
     border-top: 1px gray solid;
+    padding-top: 0.2vh;
 }
 
 input[type=text] {
@@ -55,7 +56,7 @@ div.links {
 
 a {
     text-decoration: none;
-    padding: 0.5vw;
+    padding: 0.3vw;
     color: black;
 }
 

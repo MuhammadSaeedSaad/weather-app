@@ -1,13 +1,8 @@
-console.log("client side js");
-
-
-
 const searchForm = document.querySelector("form");
 const searchInput = document.querySelector("input");
 const p1 = document.querySelector("#p1");
 const p2 = document.querySelector("#p2");
 const iconImg = document.querySelector("#Image");
-console.log(iconImg);
 
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
